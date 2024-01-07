@@ -5,7 +5,7 @@ from email.mime.application import MIMEApplication
 
 # Sender's email credentials
 sender_email = 'Abhi1931480@gmail.com'
-sender_password = 'zvhb pohs phcz obxz'  # Replace with the generated password
+sender_password = ''  # Replace with the generated password
 
 # Email content
 subject = 'Looking for Data Engineer Role - Abhishek Tiwari'
