@@ -5,7 +5,7 @@ from email.mime.application import MIMEApplication
 
 # Sender's email credentials
 sender_email = 'Abhi1931480@gmail.com'
-sender_password = ''  # Replace with the generated password
+sender_password = 'zvhb pohs phcz obxz'  # Replace with the generated password
 
 # Email content
 subject = 'Looking for Data Engineer Role - Abhishek Tiwari'
@@ -41,7 +41,36 @@ resume_path = r'C:\Users\61073167\PycharmProjects\sending_mails\Resume_Abhishek_
 attachment_name = 'Abhishek_Resume.pdf'
 
 # List of recipient email addresses
-recipients = ['careers@tcs.com ' , 'Talent.Acquisition@infosys.com', 'helpdesk.recruitment@wipro.com', 'oberoi@hcl.in', 'campus.queries@accenture.com', 'careers@in.ibm.com , rccindia@in.ibm.com', 'fresherhiring.in@capgemini.com', 'careers@techmahindrafoundation.org', 'TalentAcquisitionGroup@cognizant.com', 'DPO.Genpact@Genpact.com', 'recruiting-feedback@amazon.com']
+recipients = ['npwhrindia@intel.com',
+              'naveen.vemula@oracle.com',
+              'suman.rajeev@oracle.com',
+              'usindiaogc@deloitte.com',
+              'eletters@oracle.com',
+              'nfo.india@sap.com',
+              'sapnetwork@sap.com',
+              'info@nvidia.com',
+              'accommodations@adobe.com',
+              'support@swiggy.in',
+              'info@zomato.com',
+              'info@makemytrip.com',
+              'accomodationrequest@mphasis.com',
+              'contact.us@biocon.com',
+              'res.indigo@ctgkwi.com',
+              'HUL.Recruitment@unilever.com',
+              'contact@marutisuzuki.com',
+              'official.axisbankdepartment@gmail.com',
+              'careers@tcs.com ' ,
+              'Talent.Acquisition@infosys.com',
+              'helpdesk.recruitment@wipro.com',
+              'oberoi@hcl.in',
+              'campus.queries@accenture.com',
+              'careers@in.ibm.com',
+              'rccindia@in.ibm.com',
+              'fresherhiring.in@capgemini.com',
+              'careers@techmahindrafoundation.org',
+              'TalentAcquisitionGroup@cognizant.com',
+              'DPO.Genpact@Genpact.com',
+              'recruiting-feedback@amazon.com']
 
 def send_email(to_email):
     # Create the MIME object
