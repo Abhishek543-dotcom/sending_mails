@@ -5,7 +5,7 @@ from email.mime.application import MIMEApplication
 
 # Sender's email credentials
 sender_email = 'Abhi1931480@gmail.com'
-sender_password = 'zvhb pohs phcz obxz'
+sender_password = 'zvhb pohs phcz obxz'  # Replace with the generated password
 
 # Email content
 subject = 'Looking for Data Engineer Role - Abhishek Tiwari'
@@ -36,10 +36,12 @@ Abhishek Tiwari
 """
 
 # Path to your resume file
-resume_path = 'path/to/your/resume.pdf'
+resume_path = r'C:\Users\61073167\PycharmProjects\sending_mails\Resume_Abhishek_.pdf'
+# Specify the desired attachment name
+attachment_name = 'Abhishek_Resume.pdf'
 
 # List of recipient email addresses
-recipients = ['email1@example.com', 'email2@example.com']
+recipients = ['careers@tcs.com ' , 'Talent.Acquisition@infosys.com', 'helpdesk.recruitment@wipro.com', 'oberoi@hcl.in', 'campus.queries@accenture.com', 'careers@in.ibm.com , rccindia@in.ibm.com', 'fresherhiring.in@capgemini.com', 'careers@techmahindrafoundation.org', 'TalentAcquisitionGroup@cognizant.com', 'DPO.Genpact@Genpact.com', 'recruiting-feedback@amazon.com']
 
 def send_email(to_email):
     # Create the MIME object
@@ -51,10 +53,10 @@ def send_email(to_email):
     # Attach the body to the email
     message.attach(MIMEText(body, 'plain'))
 
-    # Attach the resume as a PDF file
+    # Attach the resume with the specified name
     with open(resume_path, 'rb') as resume_file:
         resume_attachment = MIMEApplication(resume_file.read(), _subtype="pdf")
-        resume_attachment.add_header('Content-Disposition', f'attachment; filename={resume_path}')
+        resume_attachment.add_header('Content-Disposition', f'attachment; filename={attachment_name}')
         message.attach(resume_attachment)
 
     # Connect to the SMTP server
